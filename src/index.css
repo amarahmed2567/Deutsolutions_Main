@@ -1,71 +1,85 @@
 :root {
   color-scheme: light;
 
-  /* Brand colors */
-  --color-primary: #745b00;
-  --color-secondary: #ffcc00;
-  --color-tertiary: #927400;
-  --color-neutral: #6e685d;
-  --color-danger: #745b00;
+  /* Brand palette */
+  --brand-burgundy: #7b0d12;
+  --brand-burgundy-dark: #52080c;
+  --brand-gold: #f5a800;
+  --brand-gold-soft: #ffd56a;
+  --brand-black: #161616;
+  --brand-charcoal: #292929;
+  --surface-main: #fff9f2;
+  --surface-soft: #f8f3ec;
+  --surface-card: #ffffff;
+  --text-primary: #1c1917;
+  --text-secondary: #6f6861;
+  --border-soft: rgb(28 25 23 / 10%);
+
+  /* Semantic color aliases */
+  --color-primary: var(--brand-burgundy);
+  --color-secondary: var(--brand-gold);
+  --color-tertiary: var(--brand-burgundy-dark);
+  --color-neutral: var(--brand-charcoal);
+  --color-danger: var(--brand-burgundy);
 
   /* Brand color ramps */
-  --color-primary-950: #4c3c00;
-  --color-primary-900: #5f4b00;
-  --color-primary-800: #745b00;
-  --color-primary-700: #896c00;
-  --color-primary-600: #a18116;
-  --color-primary-500: #b99a38;
-  --color-primary-400: #cfb45f;
-  --color-primary-300: #dfca8a;
-  --color-primary-200: #ebddb2;
-  --color-primary-100: #f4ecd4;
-  --color-primary-50: #fbf7ed;
+  --color-primary-950: #3d080b;
+  --color-primary-900: #52080c;
+  --color-primary-800: #7b0d12;
+  --color-primary-700: #921a20;
+  --color-primary-600: #aa3037;
+  --color-primary-500: #bd5057;
+  --color-primary-400: #ce7a7f;
+  --color-primary-300: #dda5a8;
+  --color-primary-200: #ead0d1;
+  --color-primary-100: #f4e4e4;
+  --color-primary-50: #fbf2f1;
 
-  --color-secondary-950: #614d00;
-  --color-secondary-900: #826700;
-  --color-secondary-800: #a58400;
-  --color-secondary-700: #c09a00;
-  --color-secondary-600: #d2aa00;
-  --color-secondary-500: #e4ba00;
-  --color-secondary-400: #ffcc00;
-  --color-secondary-300: #ffda45;
-  --color-secondary-200: #ffe582;
-  --color-secondary-100: #fff0bd;
-  --color-secondary-50: #fff9e6;
+  --color-secondary-950: #604100;
+  --color-secondary-900: #835900;
+  --color-secondary-800: #a97000;
+  --color-secondary-700: #ca8b00;
+  --color-secondary-600: #e39a00;
+  --color-secondary-500: #f5a800;
+  --color-secondary-400: #ffba29;
+  --color-secondary-300: #ffd56a;
+  --color-secondary-200: #ffe3a0;
+  --color-secondary-100: #fff0cb;
+  --color-secondary-50: #fff8e9;
 
-  --color-tertiary-950: #453700;
-  --color-tertiary-900: #5e4a00;
-  --color-tertiary-800: #745b00;
-  --color-tertiary-700: #806400;
-  --color-tertiary-600: #927400;
-  --color-tertiary-500: #a98b1e;
-  --color-tertiary-400: #c1a64e;
-  --color-tertiary-300: #d6c27e;
-  --color-tertiary-200: #e8dcae;
-  --color-tertiary-100: #f4edd2;
-  --color-tertiary-50: #fcf9ef;
+  --color-tertiary-950: #3d080b;
+  --color-tertiary-900: #52080c;
+  --color-tertiary-800: #7b0d12;
+  --color-tertiary-700: #921a20;
+  --color-tertiary-600: #aa3037;
+  --color-tertiary-500: #bd5057;
+  --color-tertiary-400: #ce7a7f;
+  --color-tertiary-300: #dda5a8;
+  --color-tertiary-200: #ead0d1;
+  --color-tertiary-100: #f4e4e4;
+  --color-tertiary-50: #fbf2f1;
 
-  --color-neutral-950: #29271f;
-  --color-neutral-900: #403c33;
-  --color-neutral-800: #585246;
-  --color-neutral-700: #716a5e;
-  --color-neutral-600: #898174;
-  --color-neutral-500: #a49b8c;
-  --color-neutral-400: #bdb4a6;
-  --color-neutral-300: #d3cbbf;
-  --color-neutral-200: #e5ded3;
-  --color-neutral-100: #f1ece4;
-  --color-neutral-50: #faf7f2;
+  --color-neutral-950: #161616;
+  --color-neutral-900: #292929;
+  --color-neutral-800: #403d3a;
+  --color-neutral-700: #6f6861;
+  --color-neutral-600: #827a73;
+  --color-neutral-500: #9b938c;
+  --color-neutral-400: #b8b0a8;
+  --color-neutral-300: #d0c9c1;
+  --color-neutral-200: #e2dbd4;
+  --color-neutral-100: #f0eae4;
+  --color-neutral-50: #f8f3ec;
 
   /* Surfaces and text */
-  --color-canvas: #fff8f1;
-  --color-surface: #fffefa;
-  --color-surface-raised: #fffefa;
-  --color-text: #29271f;
-  --color-text-muted: #77746c;
-  --color-border: #e9e2d6;
-  --color-white: #fffefa;
-  --color-footer-text: #716a5e;
+  --color-canvas: var(--surface-main);
+  --color-surface: var(--surface-card);
+  --color-surface-raised: var(--surface-main);
+  --color-text: var(--text-primary);
+  --color-text-muted: var(--text-secondary);
+  --color-border: var(--border-soft);
+  --color-white: var(--surface-card);
+  --color-footer-text: #ede7df;
 
   /* Typography */
   --font-heading: 'Manrope', sans-serif;
@@ -100,8 +114,8 @@
   --nav-icon-size: 2.5rem;
   --icon-button-size: 3rem;
   --board-gap: 0.875rem;
-  --shadow-soft: 0 0.5rem 1.5rem rgb(77 61 25 / 9%);
-  --shadow-control: 0 1px 2px rgb(77 61 25 / 7%);
+  --shadow-soft: 0 12px 32px rgb(22 22 22 / 6%);
+  --shadow-control: 0 1px 2px rgb(22 22 22 / 5%);
   --motion-fast: 150ms;
 
   font-family: var(--font-body);

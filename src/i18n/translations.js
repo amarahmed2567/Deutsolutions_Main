@@ -2,7 +2,7 @@ export const translations = {
   de: {
     nav: {
       links: [['Leistungen', 'leistungen'], ['Beglaubigte Übersetzungen', 'beglaubigte-uebersetzungen'], ['Anerkennung & Visa', 'anerkennung-visa'], ['Ärzte & Medizin', 'aerzte-medizin'], ['Ablauf', 'ablauf'], ['Über uns', 'ueber-uns'], ['Kontakt', 'kontakt']],
-      profile: 'Profil', chat: 'Chat', openMenu: 'Menü öffnen', closeMenu: 'Menü schließen', language: 'Sprache auswählen',
+      profile: 'Profil', chat: 'Chat', cta: 'Anfrage senden', openMenu: 'Menü öffnen', closeMenu: 'Menü schließen', language: 'Sprache auswählen',
     },
     hero: {
       eyebrow: 'Professionelle Übersetzungsdienste', headingFirst: 'Ihre Dokumente.', headingSecond: 'Präzise übersetzt.',
@@ -62,7 +62,7 @@ export const translations = {
   en: {
     nav: {
       links: [['Services', 'leistungen'], ['Certified Translations', 'beglaubigte-uebersetzungen'], ['Recognition & Visa', 'anerkennung-visa'], ['Doctors & Medicine', 'aerzte-medizin'], ['How It Works', 'ablauf'], ['About Us', 'ueber-uns'], ['Contact', 'kontakt']],
-      profile: 'Profile', chat: 'Chat', openMenu: 'Open menu', closeMenu: 'Close menu', language: 'Select language',
+      profile: 'Profile', chat: 'Chat', cta: 'Send Request', openMenu: 'Open menu', closeMenu: 'Close menu', language: 'Select language',
     },
     hero: {
       eyebrow: 'Professional Translation Services', headingFirst: 'Your documents.', headingSecond: 'Translated with precision.',
@@ -122,7 +122,7 @@ export const translations = {
   ar: {
     nav: {
       links: [['الخدمات', 'leistungen'], ['الترجمات المعتمدة', 'beglaubigte-uebersetzungen'], ['الاعتراف والتأشيرات', 'anerkennung-visa'], ['الأطباء والترجمة الطبية', 'aerzte-medizin'], ['خطوات العمل', 'ablauf'], ['من نحن', 'ueber-uns'], ['تواصل معنا', 'kontakt']],
-      profile: 'الملف الشخصي', chat: 'المحادثة', openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', language: 'اختر اللغة',
+      profile: 'الملف الشخصي', chat: 'المحادثة', cta: 'إرسال طلب', openMenu: 'فتح القائمة', closeMenu: 'إغلاق القائمة', language: 'اختر اللغة',
     },
     hero: {
       eyebrow: 'خدمات ترجمة احترافية', headingFirst: 'مستنداتكم.', headingSecond: 'ترجمة بدقة واهتمام.',

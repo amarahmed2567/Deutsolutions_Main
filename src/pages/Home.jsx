@@ -9,6 +9,7 @@ import Process from '../components/Process/Process.jsx'
 import RecognitionVisa from '../components/RecognitionVisa/RecognitionVisa.jsx'
 import Services from '../components/Services/Services.jsx'
 import TranslationTransform from '../components/TranslationTransform.jsx'
+import WhatsAppButton from '../components/WhatsAppButton/WhatsAppButton.jsx'
 import './Home.css'
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

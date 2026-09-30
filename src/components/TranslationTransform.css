@@ -1,13 +1,13 @@
 .translation-transform-section {
-  --tt-primary: #745b00;
-  --tt-accent: #ffcc00;
-  --tt-background: #fff8f1;
-  --tt-paper: #fffefa;
-  --tt-text: #29271f;
-  --tt-muted: #77746c;
-  --tt-line: #e9e2d6;
-  --tt-soft: #f4eee4;
-  --tt-success: #4f755e;
+  --tt-primary: var(--brand-burgundy, #7b0d12);
+  --tt-accent: var(--brand-gold, #f5a800);
+  --tt-background: var(--surface-main, #fff9f2);
+  --tt-paper: var(--surface-card, #ffffff);
+  --tt-text: var(--text-primary, #1c1917);
+  --tt-muted: var(--text-secondary, #6f6861);
+  --tt-line: var(--border-soft, rgb(28 25 23 / 10%));
+  --tt-success: var(--brand-burgundy, #7b0d12);
+  --tt-on-primary: #fff9f2;
   --tt-radius: 22px;
 
   position: relative;
