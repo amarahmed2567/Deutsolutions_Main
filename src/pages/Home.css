@@ -1,0 +1,36 @@
+.translation-site-root {
+  min-width: 0;
+  color: var(--color-text);
+  background: var(--color-canvas);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.translation-site-root section[id] {
+  scroll-margin-top: 88px;
+}
+
+.translation-site-root[lang='ar'] {
+  font-family: 'Noto Sans Arabic', var(--font-body), sans-serif;
+}
+
+.translation-site-root .translation-transform-section {
+  font-family: inherit;
+}
+
+.translation-site-root .translation-site-main {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .translation-site-root {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translation-site-root {
+    scroll-behavior: auto;
+  }
+}

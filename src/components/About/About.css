@@ -1,0 +1,71 @@
+.translation-site-about {
+  padding: clamp(70px, 9vw, 122px) 24px;
+  background: var(--color-neutral-50);
+}
+
+.translation-site-about__inner {
+  display: grid;
+  width: min(100%, 1320px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(40px, 8vw, 110px);
+  margin-inline: auto;
+}
+
+.translation-site-about__overview .translation-section-intro { margin-bottom: 22px; }
+
+.translation-site-about__note {
+  max-width: 600px;
+  margin: 0;
+  padding-inline-start: 16px;
+  border-inline-start: 2px solid var(--color-secondary);
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.translation-site-about__values {
+  display: grid;
+  gap: 10px;
+}
+
+.translation-site-about__values article {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  column-gap: 14px;
+  align-items: start;
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: 7px;
+  background: var(--color-surface);
+}
+
+.translation-site-about__values article > span {
+  grid-row: span 2;
+  color: var(--color-primary);
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.translation-site-about__values h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.translation-site-about__values p {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .translation-site-about__inner { grid-template-columns: minmax(0, 1fr); gap: 34px; }
+}
+
+@media (max-width: 520px) {
+  .translation-site-about { padding-inline: 18px; }
+}

@@ -1,0 +1,183 @@
+.translation-site-certified {
+  padding: clamp(70px, 9vw, 124px) 24px;
+  background: var(--color-neutral-50);
+}
+
+.translation-site-certified__inner {
+  display: grid;
+  width: min(100%, 1280px);
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.8fr);
+  align-items: center;
+  gap: clamp(44px, 8vw, 112px);
+  margin-inline: auto;
+}
+
+.translation-site-certified__copy > .translation-section-intro {
+  margin-bottom: 28px;
+}
+
+.translation-site-certified__copy > h3 {
+  margin: 0 0 14px;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+}
+
+.translation-site-certified__uses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.translation-site-certified__uses li {
+  padding: 8px 11px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  font-size: 0.78rem;
+}
+
+.translation-site-certified__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 13px 17px;
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  color: var(--color-surface);
+  background: var(--color-primary);
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.translation-site-certified__cta:hover {
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.translation-site-certified__document {
+  position: relative;
+  min-height: 370px;
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--color-surface), var(--color-neutral-50));
+  box-shadow: var(--shadow-soft);
+}
+
+.translation-site-certified__doc-top,
+.translation-site-certified__doc-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text-muted);
+  font-size: 0.66rem;
+}
+
+.translation-site-certified__doc-top > span:first-child {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.translation-site-certified__seal {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin: 28px auto 22px;
+  border: 1px solid var(--color-primary-300);
+  border-radius: 50%;
+}
+
+.translation-site-certified__seal i {
+  display: block;
+  width: 6px;
+  height: 22px;
+  border: 1px solid var(--color-primary-500);
+  border-radius: 999px;
+  transform: rotate(24deg);
+}
+
+.translation-site-certified__doc-rule {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.translation-site-certified__doc-label {
+  display: block;
+  margin-top: 23px;
+  color: var(--color-primary);
+  font-size: 0.61rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.translation-site-certified__document h3 {
+  margin: 8px 0 19px;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.translation-site-certified__doc-lines {
+  display: grid;
+  gap: 10px;
+}
+
+.translation-site-certified__doc-lines i {
+  height: 5px;
+  border-radius: 99px;
+  background: var(--color-neutral-100);
+}
+
+.translation-site-certified__doc-lines i:nth-child(2) { width: 82%; }
+.translation-site-certified__doc-lines i:nth-child(4) { width: 68%; }
+.translation-site-certified__doc-lines i:nth-child(5) { width: 51%; }
+
+.translation-site-certified__doc-bottom {
+  margin-top: 27px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.translation-site-certified__doc-bottom b {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid var(--color-primary-300);
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .translation-site-certified__inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 38px;
+  }
+
+  .translation-site-certified__document {
+    width: min(100%, 500px);
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .translation-site-certified { padding-inline: 18px; }
+  .translation-site-certified__document { min-height: 340px; padding: 22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .translation-site-certified__cta { transition: none; }
+}
