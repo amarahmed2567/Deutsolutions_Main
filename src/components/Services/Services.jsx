@@ -1,4 +1,5 @@
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
+import { LuArrowUpRight } from 'react-icons/lu'
 import SectionIntro from '../SectionIntro.jsx'
 import Icon from '../Icon.jsx'
 import './Services.css'
@@ -21,7 +22,7 @@ function Services() {
               <span className="translation-site-services__number">0{index + 1}</span>
               <h3>{title}</h3>
               <p>{description}</p>
-              <span className="translation-site-services__arrow" aria-hidden="true">↗</span>
+              <LuArrowUpRight className="translation-site-services__arrow" aria-hidden="true" size={18} />
             </a>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import { useLanguage } from '../../i18n/LanguageContext.jsx'
+import { LuArrowUpRight } from 'react-icons/lu'
 import SectionIntro from '../SectionIntro.jsx'
 import useScrollReveal from '../../hooks/useScrollReveal.js'
 import './CertifiedTranslations.css'
@@ -19,7 +20,7 @@ function CertifiedTranslations() {
           <ul className="translation-site-certified__uses" data-reveal>
             {section.useCases.map((item) => <li key={item}>{item}</li>)}
           </ul>
-          <a className="translation-site-certified__cta" href="#kontakt" data-reveal>{section.cta}<span aria-hidden="true">↗</span></a>
+          <a className="translation-site-certified__cta" href="#kontakt" data-reveal>{section.cta}<LuArrowUpRight aria-hidden="true" size={18} /></a>
         </div>
         <article className="translation-site-certified__document" aria-label={section.documentTitle} data-reveal>
           <div className="translation-site-certified__doc-top"><span>DS</span><span>DE · AR</span></div>

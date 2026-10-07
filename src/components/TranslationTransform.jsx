@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { useLanguage } from '../i18n/LanguageContext.jsx'
+import { LuArrowUpRight } from 'react-icons/lu'
 import './TranslationTransform.css'
 
 const translationScenarios = [
@@ -257,7 +258,7 @@ function TranslationTransform() {
             <span lang="en">English</span>
           </div>
           <a className="translation-transform__cta" href="#kontakt">
-            {content.hero.cta} <span aria-hidden="true">↗</span>
+            {content.hero.cta} <LuArrowUpRight aria-hidden="true" size={18} />
           </a>
         </div>
 
